@@ -46,7 +46,7 @@ $ dcos marathon app add vault.json
 ### Step 2: Initialize the vault
 SSH into one of the DC/OS cluster nodes, and initialize the vault with the following:
 ```
-$ docker run -e "VAULT_SKIP_VERIFY=true" -e "VAULT_ADDR=https://vaultuitest.marathon.mesos:8200" --entrypoint=vault -t brndnmtthws/vault-dcos init
+$ docker run -e "VAULT_SKIP_VERIFY=true" -e "VAULT_ADDR=https://vaultuitest.marathon.mesos:8200" --entrypoint=vault -t {NAME OF CONTAINER} init
 Key 1: 62b6e5c157446c05c067bb41fadf931fd8f422f4af2a4c0ee056acbd5a89d3ed01
 Key 2: a065dbfd663c5a619bfdc74ebce68051f9e7004d19c67bc6726daf49e209d4ea02
 Key 3: 91e97d22436508a67905e535f636bb3e4550a8ad77b9f69da43717baa4012b5b03
